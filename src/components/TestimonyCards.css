@@ -1,0 +1,38 @@
+.testimonyCardSingle{
+    width: 16vw;
+    height: 36vh;
+    /* background-color: cadetblue; */
+    background-image: url('/public/images/result1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.testimonyCardSingle:hover{
+    background-image: url('/public/images/result2.png');
+    color: #fff;
+}
+
+.testimonyAvatar{
+    margin-top: 1vw;
+    margin-left: 0.9vw;
+    width: 8vw;
+    border-radius: 50%;
+}
+
+.testimonyNameColumn{
+    margin-top: 4vw;
+    margin-left: 0.9vw;
+}
+.testimonyName{
+    font-size: 1.3vw;
+    font-family: Cambria;
+    font-weight: normal;
+}
+
+.testimonyMainData{
+    width: 8vw;
+    margin-left: 4.5vw;
+    margin-top: 1vw;
+    font-size: 0.9vw;
+    font-family: Arial;
+}

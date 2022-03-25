@@ -1,0 +1,54 @@
+.about-container{
+    /* background-image: 'url(' + require('/images/aboutBackground.png') + ')'; */
+    background-repeat: no-repeat;
+    padding-top: 25vh;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+
+
+.aboutVectorArt{
+    width: 60vw;
+}
+
+.aboutDetails{
+    margin-top: 7vh;
+    
+}
+
+.aboutHeading{
+    font-family: Cambria;
+    color: white;
+    word-spacing: 5px;
+    font-size: 45px;
+}
+
+.aboutText{
+    font-family: Cambria;
+    font-weight: normal;
+    color: white;
+    margin-right: 50px;
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+.aboutBackgroundImage{
+    object-fit: fit;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: relative;
+    z-index: -1;
+}
+
+.aboutHeading{
+    z-index: 0;
+}

@@ -1,0 +1,13 @@
+.subjectScrollButton{
+    margin-right: 10px;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+}
+
+.scrollerButton{
+    font-size: 1.2vw;
+}

@@ -1,0 +1,9 @@
+.submitButtonContact{
+    height: fit-content;
+    width: fit-content;
+    padding: 6px;
+    margin-top: 1vh;
+    background-color: white;
+    margin-left: 4vw;
+    cursor: pointer;
+}

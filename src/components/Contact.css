@@ -1,0 +1,45 @@
+.contacts-container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.contactMainContent{
+    margin-top: 50vh;
+}
+
+.contactMainContent.row{
+    gap: 8vw;
+}
+.contactColumn{
+    /* background-color: aqua; */
+    width: 12vw;
+}
+
+.contactHeading{
+    color: #fff;
+    font-family: Cambria;
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+.contactDescrp{
+    color: grey;
+    font-size: 1vw;
+}
+
+.needgap{
+    margin-bottom: 15px;
+}
+
+.contact-links{
+    text-decoration: none;
+    color: grey;
+}

@@ -1,0 +1,39 @@
+.courses-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    object-fit: cover;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.coursesVectorArt{
+    width: 25vw;
+}
+
+.coursesHeader{
+    align-items: center;
+    align-self: center;
+}
+
+.coursesDetails{
+    width: 50vw;
+    padding-right: 3vw;
+}
+
+.coursesHeading{
+    font-family: Cambria;
+    font-size: 3.5vw;
+}
+
+.coursesText{
+    margin-top: 2vh;
+    font-family: Cambria;
+    font-weight: normal;
+    font-size: 1vw;
+}

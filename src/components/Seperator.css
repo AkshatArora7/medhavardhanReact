@@ -1,0 +1,6 @@
+.mainSeperator{
+    height: 6vh;
+    /* background-color: violet; */
+    width: 100%;
+    z-index: 0;
+}

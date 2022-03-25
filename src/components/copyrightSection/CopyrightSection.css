@@ -1,0 +1,10 @@
+.copyrightContainer{
+    width: 100%;
+    height: 15vh;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}

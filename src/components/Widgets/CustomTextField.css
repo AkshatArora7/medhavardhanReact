@@ -1,0 +1,78 @@
+div.form-field {
+    display: block;
+    margin-bottom: 0px;
+  }
+  
+  div.form-field.is-focused .control::after {
+    border: 1px solid white;
+    transform: scaleX(150);
+  }
+  
+  div.form-field.is-focused .control label {
+    color: white;
+    font-size: 0.75rem;
+    transform: translateY(-15px);
+    padding-left: 0;
+  }
+  
+  div.form-field.has-value .control label {
+    font-size: 0.75rem;
+    transform: translateY(-14px);
+  }
+  
+  div.form-field .control {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  div.form-field .control::after {
+    border: 1px solid white;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: scaleX(0);
+    transition: all 400ms;
+    width: 1%;
+  }
+  
+  div.form-field .control input {
+      color: white;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border: 1px solid white;
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 1.3vh;
+    outline: 0;
+    padding: 0 1vw 1vh 0.5vw;
+    width: 100%;
+  }
+  
+  div.form-field .control label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    left: 0;
+    margin: 0;
+    /* padding: 1.5vw 0.5vh 0; */
+    padding-top: 1.5vh;
+    padding-left: 0.5vw;
+    position: absolute;
+    top: 0;
+    transition: all 400ms;
+    width: 100%;
+    color: grey
+  }
+  
+  div.form-field .has-error {
+    color: var(--error-color);
+    text-align: right;
+    margin: 0.5rem;
+  }
