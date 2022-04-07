@@ -132,7 +132,7 @@ function ScrollableTestimony() {
           onWheel={onWheel}
         >
           {items.map(({ one, two }) => (
-            <div className="column" itemId={one.itemId}>
+            <div className="column" itemID={one.itemId}>
               <TestimonyCards
               studentFirstName={one.studentFirstName}
               studentLastName={one.studentLastName}

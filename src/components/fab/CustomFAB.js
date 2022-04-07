@@ -10,9 +10,10 @@ function CustomFAB() {
   const [isOpened, setOpen] = useState(false);
 
   return (
-    <menu className={`${!isOpened ? "close" : "open"}`}>
+    <menu /* className={`${!isOpened ? "close" : "open"}`} */ className="close">
+     
       <a
-        href="javascript:void(0)"
+        // href="https://www.instagram.com/medhavardhanofficial/"
         className="action instagram"
         onClick={() =>
           openInNewTab("https://www.instagram.com/medhavardhanofficial/")
@@ -21,7 +22,7 @@ function CustomFAB() {
         <i className="fab fa-instagram"></i>
       </a>
       <a
-        href="javascript:void(0)"
+        // href="https://wa.me/+918750504538?text=Hello%2C%20I%27m%20inquisitive%20about%20reserving%20a%20demo%20session%20with%20Medhavardhan%2C%20can%20I%20get%20to%20know%20the%20details%3F"
         className="action whatsapp"
         onClick={() =>
           openInNewTab(
@@ -32,16 +33,16 @@ function CustomFAB() {
         <i className="fab fa-whatsapp"></i>
       </a>
       <a
-        href="javascript:void(0)"
+        // href="https://twitter.com/medhavardhanedu"
         className="action twitter"
         onClick={() => openInNewTab("https://twitter.com/medhavardhanedu")}
       >
         <i className="fab fa-twitter"></i>
       </a>
       <a
-        href="javascript:void(0)"
+        // href="https://t.me/taruns89"
         className="action telegram"
-        onClick={() => openInNewTab('https://t.me/taruns89')}
+        onClick={() => openInNewTab("https://t.me/taruns89")}
       >
         <i className="fab fa-telegram"></i>
       </a>

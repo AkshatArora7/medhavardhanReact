@@ -20,17 +20,23 @@ function ActionAreaCard({
   //     }
   // };
 
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+}
 
 
   return (
     <div className="subjectsScroller" >
     <Card
       raised={false}
+      onClick={()=>openInNewTab("https://app.medhavardhan.com")}
       onMouseOver={() => setImg(secondImg)}
       onMouseOut={() => setImg(firstImg)}
       sx={{
           bgcolor: "#D6D6D6",
           boxShadow: 0,
+          cursor: 'pointer'
         }}
     >
       <div>

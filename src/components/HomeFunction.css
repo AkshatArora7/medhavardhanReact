@@ -28,6 +28,7 @@
 }
 
 .homeSlogan {
+    margin-right: 5px;
     height: 10vh;
     color: #fff;
     font-family: 'Dancing Script';
@@ -40,6 +41,7 @@
     font-family: Cambria;
     color: #fff;
     margin-right: 15vw;
+    margin-bottom: 5vh;
     font-size: 2.5vw;
 }
 
@@ -53,32 +55,33 @@
     padding-right: 2.5vw;
     border-radius: 17px;
     color: #4285f4;    
-    font-family: Georgia;
+    /* font-family: Georgia; */
     border: none;
 }
 
 .homeInfo {
+    /* background-color: aquamarine; */
     width: 45vw;
+    margin-bottom: 16vh;
     height: 80vh;
     margin-top: 3vh;
     margin-left: 7vw;
     /* margin-right: 10vw; */
 }
 
-
-
 .homeVectorArt {
     width: 32vw;
-    height: 65vh;
+    height: fit-content;
     /* margin-right: 5vw; */
     margin-left: 7.5vw;
 }
 
 .homeText{
     color: #fff;
-    font-size: 1.2vw;
-    font-family: Cambria;
+    font-size: 1.15vw;
+    /* font-family: Cambria; */
     font-weight: normal;
+    margin-bottom: 3vh;
 }
 
 .homeSeperator{
@@ -98,11 +101,7 @@
 .homeFooterHeading{
     margin-top: 1.7vh;
     font-family: Cambria;
-    font-size: 1.1vw;
-}
-
-.homeColumn .column{
-    gap: 15vh;
+    font-size: 1.2vw;
 }
 
 .homeFooter{
@@ -120,7 +119,7 @@
 
 .footerText{
     margin-top: 2vh;
-    font-size: 0.7vw;
+    font-size: 0.8vw;
     font-family: Cambria;
     color: #C0C0C0;
     font-weight: normal;
@@ -130,11 +129,6 @@
     display: flex;
     flex-direction: column;
 }
-
-.homeInfo.column{
-    gap: 4vh;
-}
-
 
 
 .homeButton2{
