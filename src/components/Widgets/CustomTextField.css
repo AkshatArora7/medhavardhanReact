@@ -41,7 +41,7 @@ div.form-field {
   }
   
   div.form-field .control input {
-      color: white;
+    color: white;
     appearance: none;
     background: transparent;
     border: 0;
@@ -75,4 +75,11 @@ div.form-field {
     color: var(--error-color);
     text-align: right;
     margin: 0.5rem;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    div.form-field .control label {
+      padding-left: 3vw;
+    }
   }

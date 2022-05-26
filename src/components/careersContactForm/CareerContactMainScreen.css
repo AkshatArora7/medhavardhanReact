@@ -396,7 +396,7 @@ color: #2AABEE;
 
 
 
-@media (max-width: 960px) {
+@media (max-width: 480px) {
     .careerFormScreen {
       grid-template-columns: 1fr;
     }

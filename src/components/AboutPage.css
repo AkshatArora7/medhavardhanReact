@@ -1,5 +1,5 @@
 .about-container{
-    /* background-image: 'url(' + require('/images/aboutBackground.png') + ')'; */
+    background-image: url('/public/images/aboutBackground.png');
     background-repeat: no-repeat;
     padding-top: 25vh;
     background-size: cover;
@@ -19,9 +19,35 @@
     width: 60vw;
 }
 
+.smallCircleAbout{
+    position: relative;
+    bottom: 60vh;
+    left: 36vw;
+
+    height: 10vh;
+    width: 4vw;
+    z-index: 50;
+}
+
+.mediumCircleAbout{
+    position: relative;
+    bottom: 62vh;
+    left: 34vw;
+    height: 20vh;
+    width: 9vw;
+    z-index: 51;
+}
+.logoCircleAbout{
+    position: relative;
+    bottom: 70vh;
+    left: 32vw;
+    height: 20vh;
+    width: 10vw;
+    z-index: 52;
+}
+
 .aboutDetails{
-    margin-top: 7vh;
-    
+    margin-top: 7vh; 
 }
 
 .aboutHeading{
@@ -37,7 +63,7 @@
     color: white;
     margin-right: 50px;
     margin-top: 25px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .aboutBackgroundImage{
@@ -51,4 +77,50 @@
 
 .aboutHeading{
     z-index: 0;
+}
+
+@media screen and (max-width: 480px) {
+
+    .aboutVectorArt{
+        display: none;
+        visibility: hidden;
+    }
+
+    .about-container{
+        background-image: url('/public/images/aboutHomeBackground.png');
+        padding-top: 20vh;
+        height: 100vh;
+    }
+
+    .smallCircleAbout{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .mediumCircleAbout{
+        display: none;
+        visibility: hidden;
+    }
+
+    .logoCircleAbout{
+        display: none;
+        visibility: hidden;
+    }
+    .aboutDetails{
+        margin-top: 5vh; 
+    }
+
+    .aboutHeading{
+        text-align: center;
+        font-size: 45px;
+    }
+    
+    .aboutText{
+        margin-top: 15px;
+        text-align: center;
+        font-size: 17px;
+        margin-right: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }

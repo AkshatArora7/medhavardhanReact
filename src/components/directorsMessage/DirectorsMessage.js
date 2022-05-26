@@ -4,9 +4,9 @@ import './DirectorsMessage.css'
 
 function DirectorsMessage(){
     return (
-        <div className="dmContainer" style ={ { backgroundImage: "url('/images/dmBackground.png')" } }>
+        <div className="dmContainer">
             <div className="dmMainRow row">
-                <img src="./images/dmVectorArt.png" className="dmVectorArt" alt="Directors Vector"></img>
+                <img src="./images/dmVectorArt.png" className="dmVectorArt" alt="Directors"></img>
                 <div className="dmMainContentColumn column">
                     <h1 className="dmCommas">"</h1>
                     <h2 className="dmText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida vel enim eget fringilla. Suspendisse accumsan eros sed enim maximus consequat. Mauris ullamcorper egestas mollis. Duis tempus nulla at ante imperdiet, sit amet tristique nunc aliquet. In eu tincidunt augue</h2>

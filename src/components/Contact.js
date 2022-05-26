@@ -11,9 +11,8 @@ function Contacts() {
   return (
     <div
       className="contacts-container"
-      style={{ backgroundImage: "url('/images/contactBackground.png')" }}
     >
-      <div className="contactMainContent row">
+      <div className="contactMainContent">
         <div className="contactColumn column">
           <div className="contactHeading">About</div>
           <div className="contactDescrp">

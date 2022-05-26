@@ -1,4 +1,5 @@
 .contacts-container{
+    background-image: url('/public/images/contactBackground.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,14 +10,15 @@
     justify-content: center;
     align-items: center;
     object-fit: cover;
+    overflow-x: hidden; 
 }
 .contactMainContent{
     margin-top: 50vh;
-}
-
-.contactMainContent.row{
+    display: flex;
+    flex-direction: row;
     gap: 8vw;
 }
+
 .contactColumn{
     /* background-color: aqua; */
     width: 12vw;
@@ -42,4 +44,51 @@
 .contact-links{
     text-decoration: none;
     color: grey;
+}
+
+@media screen and (max-width: 480px) {
+    .contacts-container{
+        height: auto;
+        align-items: flex-start;
+        margin: 0;
+        padding-top: 10vh;
+        padding-left: 10vw;
+    }
+    .contacts-container{
+        background-image: url('/public/images/contactBackgroundMobile.png');
+    }
+
+    .contactMainContent{
+        margin-top: 50vh;
+        display: flex;
+        flex-direction: column;
+        gap: 8vw;
+    }
+
+    .contactColumn{
+        /* background-color: aqua; */
+        width: 65vw;
+    }
+    
+    .contactHeading{
+        color: #fff;
+        font-family: Cambria;
+        font-weight: 700;
+        font-size: 7vw;
+        margin-bottom: 2vh;
+    }
+    
+    .contactDescrp{
+        color: grey;
+        font-size: 3vw;
+    }
+    
+    .needgap{
+        margin-bottom: 5px;
+    }
+    
+    .contact-links{
+        text-decoration: none;
+        color: grey;
+    }
 }

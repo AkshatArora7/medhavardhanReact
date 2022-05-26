@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     object-fit: cover;
+    overflow-x: hidden;
 }
 .testimonyContent{
     align-items: center;
@@ -29,4 +30,30 @@
     /* background-color: #e6e6ff; */
     width: 60vw;
     height: 70vh;
+}
+
+@media screen and (max-width: 480px) {
+    .testimony-container{
+        margin: 0vh;
+    }
+    .testimonyVectorArt{
+        display: none;
+        visibility: hidden;
+    }
+    .testimonyContent{
+        align-items: center;
+        width: 100%;
+    }
+    .testimonyHeading{
+        width: 100%;
+        text-align: left;
+        padding-left: 8vw;
+        font-size: 10vw;
+    }
+
+    .testimonyScroller{
+        overflow-x: hidden;
+        width: 110vw;
+        height: 70vh;
+    }
 }

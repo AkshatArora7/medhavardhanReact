@@ -1,11 +1,11 @@
 .courses-container{
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
     object-fit: cover;
+    overflow-x: hidden; 
 }
 
 .clickable{
@@ -36,4 +36,55 @@
     font-family: Cambria;
     font-weight: normal;
     font-size: 1vw;
+}
+
+.subjectCardsMobile{
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+
+    .coursesVectorArt{
+        display: none;
+        visibility: hidden;
+    }
+
+    .coursesHeader{
+        align-items: left;
+        align-self: left;
+    }
+
+    .coursesDetails{
+        width: 100%;
+        padding-left: 3vw;
+    }
+    .coursesHeading{
+        font-family: Cambria;
+        font-size: 10vw;
+    }
+    
+    .coursesText{
+        margin-top: 2vh;
+        font-family: Cambria;
+        font-weight: normal;
+        font-size: 3vw;
+    }
+
+    .subjectCards{
+        display: none;
+        visibility: hidden;
+    }
+
+    .subjectCardsMobile{
+        display: block;
+        visibility: visible;
+        align-items: center;
+        align-self: center;
+    }
+    .mobileCardsColumn{
+        margin-top: 5vh;
+        margin-left: 15vw;
+    }
+
 }

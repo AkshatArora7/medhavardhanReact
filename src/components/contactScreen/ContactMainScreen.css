@@ -390,3 +390,80 @@ color: #C13584;
 color: #2AABEE;
 }
 
+
+@media (max-width: 960px) {
+    .contactScreenFormMain {
+      grid-template-columns: 1fr;
+    }
+  
+    .contactScreen-info:before {
+      bottom: initial;
+      top: -75px;
+      right: 65px;
+      transform: scale(0.95);
+    }
+  
+    .contactScreen-info:before {
+      top: -13px;
+      left: initial;
+      right: 70px;
+    }
+  
+    .square {
+      transform: translate(140%, 43%);
+      height: 350px;
+    }
+  
+    .big-circle {
+      bottom: 75%;
+      transform: scale(0.9) translate(-40%, 30%);
+      right: 50%;
+    }
+  
+    .contactScreenText {
+      margin: 1rem 0 1.5rem 0;
+    }
+  
+    .contactScreenSocial-media {
+      padding: 1.5rem 0 0 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contactMainContainer {
+      display: flex;
+      padding: 1.5rem;
+    }
+  
+    .contactScreen-info:before {
+      display: none;
+    }
+  
+    .square,
+    .big-circle {
+      display: none;
+    }
+  
+    form,
+    .contactScreen-info {
+      padding: 2rem;
+    }
+  
+    .contactScreenText,
+    .contactScreenInformation,
+    .contactScreenSocial-media p {
+      font-size: 1rem;
+    }
+  
+    .contactScreenTitle {
+      font-size: 1.15rem;
+    }
+  
+    .input {
+      padding: 0.45rem 1.2rem;
+    }
+  
+    .contactScreenButton {
+      padding: 0.45rem 1.2rem;
+    }
+  }

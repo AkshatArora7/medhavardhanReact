@@ -7,3 +7,17 @@
     margin-left: 4vw;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .submitButtonContact{
+        height: 8vw;
+        width: 20vw;
+        padding: 1vw;
+        margin-top: 1vh;
+        background-color: white;
+        margin-left: 18vw;
+        cursor: pointer;
+    }
+
+    
+}

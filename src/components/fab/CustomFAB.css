@@ -139,4 +139,44 @@ menu > .trigger:hover {
     
     opacity: 1;
   }
+
+  @media screen and (max-width: 480px) {
+    menu {
+      --size: 10vw;
+      --radius: 20vw;
+      --padding: 7.5vw;
+      /* --bg-color: rgba(255, 255, 255, 0.9); */
+      --bg-color: #2777FF;
+      --fg-color: white;
+      --hi-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      bottom: var(--padding);
+      right: var(--padding);
+      z-index: 998;
+  }
+    menu > .trigger {
+      justify-content: center;
+      align-items: center;
+      width: calc(1.6 * var(--size));
+      height: calc(1.6 * var(--size));
+      bottom: 0;
+      right: 0;
+      font-size: 7vw;
+      transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+    }
+    menu > .action {
+      --factor: 0;
+      
+      width: var(--size);
+      height: var(--size);
+      right: calc(0.1 * var(--size));
+      bottom: calc(0.1 * var(--size));
+      
+      opacity: 0;
+      
+      transform: rotate(calc(-1 * var(--angle))) translateY(calc(-1.1 * var(--radius) * var(--factor))) rotate(var(--angle));
+      
+      transition: transform 250ms ease-in-out, opacity 250ms ease-in-out, box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+    }
+  }
   

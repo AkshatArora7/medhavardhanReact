@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import "./HomeFunction.css";
 import { motion } from "framer-motion";
@@ -12,7 +12,7 @@ function HomeFunction() {
   return (
     <div className="home-container">
       <img
-        src="/images/homeBackground.png"
+        // src="/images/homeBackground.png"
         className="HomeBackgroundImg"
         alt="medhavardhan"
       />
@@ -49,15 +49,9 @@ function HomeFunction() {
             <h1 className="homeHeading">
               Take the first step to learn with us
             </h1>
-            <h2 className="homeText">
-              We are well equipped with a strong faculty team to support us,
-              accompanied with fantastic teaching pedagogy that runs well with
-              the young minds. Our vision is to create an efficient knowledge
-              based community that does not see work as a burden, but enjoys it
-              to the best. This institute keeps in mind the aspirations,
-              thoughts and expectations of young minds and tries to accelerate
-              their preparation with efficient strategy.
-            </h2>
+            <div className="homeText">
+              <span></span>
+            </div>
             <div className="home-btns">
               <button
                 className="homeButton"
@@ -88,7 +82,6 @@ function HomeFunction() {
                 </h2>
               </div>
             </div>
-
             <div className="homeSeperator"></div>
             <div className="footerHeadingRow row">
               <img
@@ -108,6 +101,59 @@ function HomeFunction() {
             </div>
 
             <div className="homeSeperator"></div>
+            <div className="footerHeadingRow row">
+              <img
+                src="/images/homeIconBooks.png"
+                alt="books"
+                className="homeIcons"
+              ></img>
+              <div className="footers Column">
+                {" "}
+                <h2 className="homeFooterHeading">Full E-Books</h2>{" "}
+                <h2 className="footerText">
+                  We have full coverage of all your courses into our well
+                  designed notes which is available as both paperback and
+                  electronic version, just choose your perfect way of learning.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div className="homeFooterMobile column">
+
+            <div className="footerHeadingRow row">
+              <img
+                src="/images/homeIconClasses.png"
+                alt="books"
+                className="homeIcons"
+              ></img>
+              <div className="footers Column">
+                {" "}
+                <h2 className="homeFooterHeading">New Classes</h2>{" "}
+                <h2 className="footerText">
+                  Our class are supplied with all the necessary equipments to
+                  make you prepare for you goals. We are all the things that you
+                  may think of to have in an institute altogether.
+                </h2>
+              </div>
+            </div>
+            
+            <div className="footerHeadingRow row">
+              <img
+                src="/images/homeIconTop.png"
+                alt="books"
+                className="homeIcons"
+              ></img>
+              <div className="footers Column">
+                {" "}
+                <h2 className="homeFooterHeading">Top Courses</h2>{" "}
+                <h2 className="footerText">
+                  We have all the latest courses with certified trainers. Learn
+                  how to become your idol by just getting a demo class with
+                  Medhavardhan.
+                </h2>
+              </div>
+            </div>
+
             <div className="footerHeadingRow row">
               <img
                 src="/images/homeIconBooks.png"

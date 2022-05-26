@@ -1,6 +1,6 @@
 .home-container {
     /* background: url('/images/img-home.jpg')  */
-    height: 80vh;
+    height: 120vh;
     /* background-color: aqua; */
     width: 100%;
     display: flex;
@@ -8,6 +8,7 @@
     justify-content: flex-start;
     align-items: center;
     object-fit: contain;
+    overflow-x: hidden; 
 }
 
 
@@ -17,7 +18,9 @@
     height: 100vh;
     top: 0;
     position: absolute;
+    content: url("/public/images/homeBackground.png");
     z-index: 1;
+    overflow: hidden;
 }
 
 .homeMain{
@@ -71,7 +74,7 @@
 
 .homeVectorArt {
     width: 32vw;
-    height: fit-content;
+    height: 65vh;
     /* margin-right: 5vw; */
     margin-left: 7.5vw;
 }
@@ -82,6 +85,14 @@
     /* font-family: Cambria; */
     font-weight: normal;
     margin-bottom: 3vh;
+}
+
+.homeText span{
+    display: none;
+}
+
+.homeText::after{
+    content: "We are well equipped with a strong faculty team to support us, accompanied with fantastic teaching pedagogy that runs well with the young minds. Our vision is to create an efficient knowledge based community that does not see work as a burden, but enjoys it to the best. This institute keeps in mind the aspirations, thoughts and expectations of young minds and tries to accelerate their preparation with efficient strategy."; 
 }
 
 .homeSeperator{
@@ -133,4 +144,135 @@
 
 .homeButton2{
     color: #ffffff;
+}
+
+.homeFooterMobile{
+    visibility: hidden;
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .home-container {
+        /* background: url('/images/img-home.jpg')  */
+        height: auto;
+        /* background-color: aqua; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        object-fit: contain;
+        overflow-x: hidden; 
+    }
+
+    .HomeBackgroundImg{
+        content: url("/public/images/homeBackgroundMobile.png");
+        overflow-x: hidden; 
+    }
+
+    .homeSlogan {
+        margin-top: 3vh;
+        color: #fff;
+        font-family: 'Dancing Script';
+        font-weight: normal;
+        font-size: 10vw;
+        z-index: 1;
+    }
+
+
+    .homeVectorArt{
+        display: none;
+        visibility: hidden;
+        z-index: -10;
+    }
+
+    .homeInfo {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .homeHeading {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        font-size: 9vw;
+    }
+
+    .homeText{
+        text-align: center;
+        color: #fff;
+        font-size: 4vw;
+        font-weight: normal;
+        margin-bottom: 3vh;
+        margin-top: 2vh;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .homeText span{
+        display: none;
+    }
+    
+    .homeText::after{
+        content: "We are well equipped with a strong faculty team to support us, accompanied with fantastic teaching pedagogy that runs well with the young minds. Our vision is to create an efficient knowledge based community that does not see work as a burden, but enjoys it to the best."; 
+    }
+
+    .homeButton{
+        margin: 0;
+        cursor: pointer;
+        align-self: center;
+        font-size: 4vw;
+        font-weight: 400;
+        padding-top: 0.7vh;
+        padding-bottom: 0.7vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        border-radius: 17px;
+        color: #4285f4;
+        border: none;
+    }
+
+    .homeFooter{
+        visibility: hidden;
+        display: none;
+    }
+
+    .homeFooterMobile{
+        visibility: visible;
+        display: block;
+        margin-left: 5vw;
+        margin-top: 5vh;
+        padding-top: 10vh;
+        width: 80vw;
+    }
+
+    .homeFooterHeading{
+        margin-top: 1vh;
+        font-family: Cambria;
+        font-size: 6vw;
+    }
+        
+    .homeIcons{
+        height: 6vh;
+        width: 15vw;
+        margin-right: 0.5vw;
+    }
+    
+    .footerText{
+        margin-top: 2vh;
+        font-size: 3.5vw;
+        font-family: Cambria;
+        color: #C0C0C0;
+        font-weight: normal;
+    }
+    .footers{
+        margin-left: 2vw;
+    }
+    .footerHeadingRow{
+        margin-top: 1vh;
+    }
+
 }

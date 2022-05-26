@@ -1,4 +1,5 @@
 .dmContainer{
+    background-image: url('/public/images/dmBackground.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -52,4 +53,30 @@
     font-family: Arial;
     font-weight: normal;
     color: grey;
+}
+
+@media screen and (max-width: 480px) {
+
+    .dmContainer{
+        background-image: url('/public/images/dmBackgroundMobile.png');
+        margin: 0;
+    }
+    .dmVectorArt{
+        visibility: hidden;
+        display: none;
+    }
+    .dmText{
+        font-size: 5vw;
+        font-family: Arial;
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+    .dmName{
+        font-size: 4.5vw;
+    }
+    
+    .dmRole{
+        font-size: 4vw;
+    }
 }
