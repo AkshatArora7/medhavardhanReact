@@ -151,10 +151,154 @@
     display: none;
 }
 
+.homeFooterTab{
+    visibility: hidden;
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .home-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        object-fit: contain;
+        overflow-x: hidden; 
+    }
+
+    .HomeBackgroundImg{
+        content: url("/public/images/homeBackgroundTab.png");
+        overflow-x: hidden; 
+    }
+
+    .homeSlogan {
+        margin-top: 5vh;
+        color: #fff;
+        font-family: 'Dancing Script';
+        font-weight: normal;
+        font-size: 10vw;
+        z-index: 1;
+    }
+
+
+    .homeVectorArt{
+        display: none;
+        visibility: hidden;
+    }
+
+    .homeInfo {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .homeHeading {
+        text-align: center;
+        margin: 0;
+        margin-top: 2vh;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        font-size: 8vw;
+    }
+
+    .homeText{
+        text-align: center;
+        color: #fff;
+        font-size: 3.5vw;
+        font-weight: normal;
+        margin-bottom: 4vh;
+        margin-top: 2vh;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .homeText span{
+        display: none;
+    }
+    
+    .homeText::after{
+        content: "We are well equipped with a strong faculty team to support us, accompanied with fantastic teaching pedagogy that runs well with the young minds."; 
+    }
+
+    .homeButton{
+        margin: 0;
+        cursor: pointer;
+        align-self: center;
+        font-size: 3.5vw;
+        font-weight: 400;
+        padding-top: 0.7vh;
+        padding-bottom: 0.7vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        border-radius: 17px;
+        color: #4285f4;
+        border: none;
+    }
+
+    .homeFooter{
+        visibility: hidden;
+        display: none;
+    }
+    
+    .homeFooterMobile{
+        visibility: hidden;
+        display: none;
+    }
+
+    .homeFooterTab{
+        visibility: visible;
+        display: block;
+        margin-left: 5vw;
+        margin-top: 5vh;
+        padding-top: 10vh;
+        width: 80%;
+    }
+
+    .homeFooterTabRow{
+        margin-bottom: 3vh;
+    }
+
+    .homeFooterHeading{
+        margin-top: 1vh;
+        font-family: Cambria;
+        font-size: 4vw;
+    }
+        
+    .homeIcons{
+        height: 7vh;
+        width: 16vw;
+        margin-right: 0.5vw;
+    }
+    
+    .footerText{
+        margin-top: 2vh;
+        font-size: 2vw;
+        font-family: Cambria;
+        color: #C0C0C0;
+        font-weight: normal;
+    }
+
+    .footerRowSetter{
+        width: 45vw;
+    }
+    .footers{
+        margin-left: 2vw;
+    }
+    .footerHeadingRow{
+        margin-top: 1vh;
+    }
+
+}
 @media screen and (max-width: 480px) {
+    .homeFooterTab{
+        visibility: hidden;
+        display: none;
+    }
     .home-container {
         /* background: url('/images/img-home.jpg')  */
-        height: auto;
+        height: 115vh;
         /* background-color: aqua; */
         width: 100%;
         display: flex;

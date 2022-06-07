@@ -179,4 +179,58 @@ menu > .trigger:hover {
       transition: transform 250ms ease-in-out, opacity 250ms ease-in-out, box-shadow 250ms ease-in-out, color 250ms ease-in-out;
     }
   }
+
+  /* tab */
+  @media screen and (max-width: 960px) {
+    menu {
+      --size: 5vw;
+      --radius: 12vw;
+      --padding: 7vw;
+      /* --bg-color: rgba(255, 255, 255, 0.9); */
+      --bg-color: #2777FF;
+      --fg-color: white;
+      --hi-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      bottom: var(--padding);
+      right: var(--padding);
+      z-index: 998;
+  }
+    menu > .trigger {
+      padding-bottom: 0.5vh;
+      padding-right: 0.5vh;
+      padding-left: 0.5vh;
+      justify-content: center;
+      align-items: center;
+      width: calc(1.6 * var(--size));
+      height: calc(1.6 * var(--size));
+      bottom: 0;
+      right: 0;
+      font-size: 5vw;
+      transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+    }
+
+    menu.close:hover > .trigger > i{
+      padding-left: 1vw;
+      padding-right: 1vw;
+      padding-bottom: 1vh;
+      transform: rotate(-315deg);
+    }
+
+    menu > .action {
+      --factor: 0;
+      
+      width: calc(1.4 *var(--size));
+      height: calc(1.4 *var(--size));
+      right: calc(0.2 * var(--size));
+      bottom: calc(0.2 * var(--size));
+      
+      opacity: 0;
+      
+      transform: rotate(calc(-1 * var(--angle))) translateY(calc(-1.5 * var(--radius) * var(--factor))) rotate(var(--angle));
+      
+      transition: transform 250ms ease-in-out, opacity 250ms ease-in-out, box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+    }
+  }
   

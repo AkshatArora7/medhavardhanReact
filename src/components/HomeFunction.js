@@ -171,6 +171,59 @@ function HomeFunction() {
               </div>
             </div>
           </div>
+          <div className="homeFooterTab column">
+            <div className="homeFooterTabRow row">
+            <div className="footerHeadingRow row">
+              <img
+                src="/images/homeIconClasses.png"
+                alt="books"
+                className="homeIcons"
+              ></img>
+              <div className="footers Column">
+                {" "}
+                <h2 className="homeFooterHeading">New Classes</h2>{" "}
+                <h2 className="footerText">
+                  Our class are supplied with all the necessary equipments to
+                  make you prepare for you goals. We are all the things that you
+                  may think of to have in an institute altogether.
+                </h2>
+              </div>
+            </div>
+            
+            <div className="footerHeadingRow row">
+              <img
+                src="/images/homeIconTop.png"
+                alt="books"
+                className="homeIcons"
+              ></img>
+              <div className="footers Column">
+                {" "}
+                <h2 className="homeFooterHeading">Top Courses</h2>{" "}
+                <h2 className="footerText">
+                  We have all the latest courses with certified trainers. Learn
+                  how to become your idol by just getting a demo class with
+                  Medhavardhan.
+                </h2>
+              </div>
+            </div>
+            </div>
+            <div className="footerHeadingRow row footerRowSetter">
+              <img
+                src="/images/homeIconBooks.png"
+                alt="books"
+                className="homeIcons"
+              ></img>
+              <div className="footers Column">
+                {" "}
+                <h2 className="homeFooterHeading">Full E-Books</h2>{" "}
+                <h2 className="footerText">
+                  We have full coverage of all your courses into our well
+                  designed notes which is available as both paperback and
+                  electronic version, just choose your perfect way of learning.
+                </h2>
+              </div>
+            </div>
+          </div>
         </div>
         <img
           className="homeVectorArt"

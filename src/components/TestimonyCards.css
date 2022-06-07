@@ -37,6 +37,43 @@
     font-family: Arial;
 }
 
+@media screen and (max-width: 960px) {
+    .testimonyCardSingle{
+        --size: 50vw;
+        width: var(--size);
+        height: var(--size);
+    }
+
+    .testimonyCardSingle:hover{
+        background-image: url('/public/images/result2.png');
+        color: #fff;
+    }
+    
+    .testimonyAvatar{
+        margin-top: 3.6vw;
+        margin-left: 3vw;
+        width: 24vw;
+        border-radius: 50%;
+    }
+    
+    .testimonyNameColumn{
+        margin-top: 12vw;
+        margin-left: 2vw;
+    }
+    .testimonyName{
+        font-size: 4vw;
+        font-family: Cambria;
+        font-weight: normal;
+    }
+    
+    .testimonyMainData{
+        width: 22vw;
+        margin-left: 20vw;
+        margin-top: 3vw;
+        font-size: 3vw;
+        font-family: Arial;
+    }
+}
 @media screen and (max-width: 480px) {
     .testimonyCardSingle{
         --size: 50vw;

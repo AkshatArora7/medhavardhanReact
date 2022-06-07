@@ -32,6 +32,33 @@
     height: 70vh;
 }
 
+@media screen and (max-width: 960px) {
+    .testimony-container{
+        height: 120vh;
+        margin: 0vh;
+    }
+    .testimonyVectorArt{
+        display: none;
+        visibility: hidden;
+    }
+    .testimonyContent{
+        align-items: center;
+        width: 100%;
+    }
+    .testimonyHeading{
+        width: 100%;
+        text-align: left;
+        padding-left: 8vw;
+        font-size: 10vw;
+    }
+
+    .testimonyScroller{
+        margin: 0vh;
+        overflow-x: hidden;
+        width: 110vw;
+        height: 110%;
+    }
+}
 @media screen and (max-width: 480px) {
     .testimony-container{
         margin: 0vh;

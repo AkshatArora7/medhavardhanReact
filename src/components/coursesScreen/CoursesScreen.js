@@ -56,7 +56,7 @@ function CoursesScreen() {
         </div>
       </div>
     </div>
-  );
+      );
 }
 
 export default CoursesScreen;

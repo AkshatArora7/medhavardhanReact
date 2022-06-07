@@ -54,7 +54,7 @@ export function LeftTestimonyArrow() {
 
   return (
     <TestimonyArrow disabled={disabled} onClick={() => scrollPrev()}>
-      <div className="column">
+      <div className="column scrollerButton">
       Prev
       <i className="fas fa-arrow-left-long"/>
       </div>
@@ -78,7 +78,7 @@ export function RightTestimonyArrow() {
 
   return (
     <TestimonyArrow disabled={disabled} onClick={() => scrollNext()}>
-    <div className="column">
+    <div className="column scrollerButton">
       Next
       <i className="fas fa-arrow-right-long"/>
       </div>

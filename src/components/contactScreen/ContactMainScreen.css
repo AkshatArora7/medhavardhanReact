@@ -429,6 +429,46 @@ color: #2AABEE;
     }
   }
 
+  @media (max-width: 960px) {
+    .contactMainContainer {
+      display: flex;
+      padding: 1.5rem;
+    }
+  
+    .contactScreen-info:before {
+      display: none;
+    }
+  
+    .square,
+    .big-circle {
+      display: none;
+    }
+  
+    form,
+    .contactScreen-info {
+      padding: 2rem;
+    }
+  
+    .contactScreenText,
+    .contactScreenInformation,
+    .contactScreenSocial-media p {
+      font-size: 1rem;
+    }
+  
+    .contactScreenTitle {
+      font-size: 1.15rem;
+    }
+  
+    .input {
+      padding: 0.45rem 1.2rem;
+    }
+  
+    .contactScreenButton {
+      padding: 0.45rem 1.2rem;
+    }
+  }
+
+
   @media (max-width: 480px) {
     .contactMainContainer {
       display: flex;

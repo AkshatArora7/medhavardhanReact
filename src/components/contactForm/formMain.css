@@ -6,6 +6,25 @@
     background-color: white;
     margin-left: 4vw;
     cursor: pointer;
+    color: black;
+
+}
+
+
+@media screen and (max-width: 960px) {
+    .submitButtonContact{
+        height: 4.5vw;
+        width: 15vw;
+        padding: 1vw;
+        margin-top: 1vh;
+        background-color: white;
+        margin-left: 7vw;
+        cursor: pointer;
+        font-size: small;
+        color: black;
+    }
+
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -17,6 +36,7 @@
         background-color: white;
         margin-left: 18vw;
         cursor: pointer;
+        color: black;
     }
 
     
